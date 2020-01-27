@@ -4,6 +4,8 @@
 
 ### Usage
 
+An editor where you can see the app (on the right) and edit the code (on the left):
+
 https://codesandbox.io/s/github/5k-mirrors/poe-what-to-flip
 
 - Wait a bit to let the data load.
