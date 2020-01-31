@@ -2,6 +2,8 @@
 
 #### Compares prices to find the most profitable deals (Divination Cards, Breachstones, Prophecies, Scarabs, anything)
 
+![](showcase.png)
+
 ### Usage
 
 An editor where you can see the app (on the right) and edit the code (on the left):
