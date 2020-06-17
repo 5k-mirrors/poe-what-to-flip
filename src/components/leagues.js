@@ -22,9 +22,10 @@ const mapToMetaLeagues = leagues => {
   });
 
   if (tempSC.length !== 1 || tempHC.length !== 1) {
-    throw new Error(
-      `Couldn't indentify temp leagues in ${JSON.stringify(tempLeagues)}`
-    );
+    return {
+      Standard: "Standard",
+      Hardcore: "Hardcore",
+    };
   }
 
   return {
