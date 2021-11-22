@@ -7,21 +7,22 @@ export const Comparisons = ({ selectedLeague }) => {
   const comparisonsByGroup = comparisons();
 
   return (
-    <ol>
+    <div>
       {Object.keys(comparisonsByGroup).map(group => (
         <div key={group}>
           <h2>{group}</h2>
+          <ul>
           {comparisonsByGroup[group].map((comparison, i) => (
-            <li key={i}>
-              <Comparison
-                selectedLeague={selectedLeague}
-                comparison={comparison}
-              />
-            </li>
+            <Comparison
+              selectedLeague={selectedLeague}
+              comparison={comparison}
+              key={i}
+            />
           ))}
+          </ul>
         </div>
       ))}
-    </ol>
+    </div>
   );
 };
 

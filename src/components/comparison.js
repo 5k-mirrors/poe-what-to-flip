@@ -8,7 +8,6 @@ export const Comparison = ({ selectedLeague, comparison }) => {
   const useCompareText = (baseNames, compareNames) => {
     const baseItems = useFindItems(selectedLeague, baseNames);
     const compareItems = useFindItems(selectedLeague, compareNames);
-
     let text;
 
     if (baseItems.concat(compareItems).some(item => !isDefined(item))) {
@@ -53,10 +52,18 @@ export const Comparison = ({ selectedLeague, comparison }) => {
     return text;
   };
 
-  return <label>{ComparisonText()}</label>;
+  let style = {
+    order: useCompareText(
+      comparison.base,
+      comparison.compare
+    )
+  };
+
+  return <li key={comparison.key} style={style}>{ComparisonText()}</li>;
 };
 
 Comparison.propTypes = {
   comparison: PropTypes.object,
   selectedLeague: PropTypes.string,
+  key: PropTypes.number,
 };
