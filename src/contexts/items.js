@@ -26,7 +26,11 @@ const find = (items, name) => {
   if (!items) return null;
   let foundItem;
   for (const [type, details] of Object.entries(typeConfig())) {
-    for (const item of items[type]) {
+    const typeItems = items[type] || [];
+    if (!typeItems.length) {
+      console.log(`${type} is not available`);
+    }
+    for (const item of items[type] || []) {
       if (item[details.name_key] === name) {
         foundItem = item;
         foundItem.type = type;

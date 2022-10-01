@@ -17,3 +17,8 @@ body {
 h1,h2,h3 {
   line-height: 1.2;
 }
+
+ul {
+  display: flex;
+  flex-direction: column-reverse;
+}
