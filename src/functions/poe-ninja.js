@@ -21,11 +21,6 @@ export const typeConfigByCategory = () => {
       },
     },
     item: {
-      prophecies: {
-        type: "Prophecy",
-        name_key: "name",
-        compare_key: "chaosValue",
-      },
       accessories: {
         type: "UniqueAccessory",
         name_key: "name",

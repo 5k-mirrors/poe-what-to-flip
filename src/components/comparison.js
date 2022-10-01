@@ -52,14 +52,15 @@ export const Comparison = ({ selectedLeague, comparison }) => {
     return text;
   };
 
-  let style = {
-    order: useCompareText(
-      comparison.base,
-      comparison.compare
-    )
+  const style = {
+    order: useCompareText(comparison.base, comparison.compare),
   };
 
-  return <li key={comparison.key} style={style}>{ComparisonText()}</li>;
+  return (
+    <li key={comparison.key} style={style}>
+      {ComparisonText()}
+    </li>
+  );
 };
 
 Comparison.propTypes = {

@@ -1,6 +1,6 @@
 # PoE - What To Flip
 
-#### Compares prices to find the most profitable deals (Divination Cards, Breachstones, Prophecies, Scarabs, anything)
+#### Compares prices to find the most profitable deals (Divination Cards, Breachstones, Scarabs, anything)
 
 https://codesandbox.io/s/github/5k-mirrors/poe-what-to-flip
 

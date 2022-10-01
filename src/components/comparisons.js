@@ -12,13 +12,13 @@ export const Comparisons = ({ selectedLeague }) => {
         <div key={group}>
           <h2>{group}</h2>
           <ul>
-          {comparisonsByGroup[group].map((comparison, i) => (
-            <Comparison
-              selectedLeague={selectedLeague}
-              comparison={comparison}
-              key={i}
-            />
-          ))}
+            {comparisonsByGroup[group].map((comparison, i) => (
+              <Comparison
+                selectedLeague={selectedLeague}
+                comparison={comparison}
+                key={i}
+              />
+            ))}
           </ul>
         </div>
       ))}
